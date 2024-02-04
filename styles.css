@@ -160,7 +160,159 @@ img {
 }
 
 /*=============== HEADER & NAV ===============*/
+/*=============== HEADER & NAV ===============*/
+.header{
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  transition: background-color .3s;
+}
 
+.nav{
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a{
+  color: var(--first-color);
+}
+
+.nav__logo,
+.nav__toggle{
+  color: var(--title-color);
+  display: flex;
+}
+
+.nav__logo{
+  align-items: center;
+  column-gap: .5rem;
+  font-weight: var(--font-bold);
+}
+
+.nav__logo img{
+  width: 2.25rem;
+}
+
+.nav__toggle{
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1023px){
+  .nav__menu{
+    position: fixed;
+    background-color: hsla(180, 12%, 8%, .8);
+    backdrop-filter: blur(32px);
+    -webkit-backdrop-filter: blur(32px);
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100%;
+    border-left: 2px solid var(--first-color-gray);
+    transition: right .3s;
+  }
+}
+
+.nav__list{
+  padding: 5rem 0 0 3rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+}
+
+.nav__list a{
+  color: #000;
+}
+
+.nav__link a{
+  color: var(--title-color);
+  transition: color .3s;
+}
+
+.nav__link:hover{
+  color: #f66c02;
+}
+
+.nav__close{
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--title-color);
+  cursor: pointer;
+}
+
+.nav .nav__button{
+  background-color: var(--title-color);
+  border: none;
+  color: black;
+}
+
+/* Show menu */
+.show-menu{
+  right: 0 ;
+}
+
+/* Add blur header */
+.blur-header::after{
+  content: '';
+  position: absolute;
+  width: 1000%;
+  height: 100%;
+  background-color: hsla(23, 12%, 4%, .2);
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+  top: 0;
+  left: 0;
+  z-index: -1;  
+}
+
+/* Change background header */
+
+
+/* Active link */
+
+
+/*=============== HOME ===============*/
+.home{
+  position: relative;
+  padding-bottom: 0;
+}
+
+.home__container{
+  padding-top: 4rem;
+  row-gap: 3rem;
+}
+
+.home__data{
+  text-align: center;
+}
+
+.home__subtitle{
+  font-size: var(--bigger-font-size);
+  -webkit-text-stroke: 1px var(--title-color);
+  color: transparent;
+}
+
+.home__title{
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-black);
+  margin: .5rem 0;
+}
+
+.home__subtitle,
+.home__title{
+  letter-spacing: 1.5px;
+}
+
+.home__description{
+  margin-bottom: 2.5rem;
+}
 
 /* Show menu */
 
