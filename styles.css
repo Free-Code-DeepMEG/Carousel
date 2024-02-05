@@ -403,7 +403,7 @@ img {
 }
 
 .carousel .list .item .content .topic{
-  color: #ffc300;
+  color: var(--first-color);
 }
 
 .carousel .list .item .content .buttons{
@@ -416,7 +416,7 @@ img {
 
 .carousel .list .item .content button{
   border: none;
-  background-color: #ffc300;
+  background-color: var(--first-color-alt);
   letter-spacing: 3px;
   font-family: Poppins;
   font-weight: 500;
@@ -425,7 +425,7 @@ img {
 .carousel .list .item .content button:nth-child(2){
   background-color: white;
   color: #000;
-  border: 1px solid #ffc300;
+  border: 1px solid var(--first-color);
 }
 
 .thumbnail{
@@ -619,7 +619,7 @@ img {
 .time{
   width: 0%;
   height: 5px;
-  background-color: #e1d320;
+  background-color: green;
   position: absolute;
   z-index: 100;
   top: 0;
