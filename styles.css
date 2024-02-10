@@ -178,7 +178,7 @@ img {
 }
 
 .nav a{
-  color: var(--first-color);
+  color: rgb(6, 244, 6);
 }
 
 .nav__logo,
