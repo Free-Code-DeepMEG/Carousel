@@ -404,7 +404,7 @@ img {
 }
 
 .carousel .list .item .content .topic{
-  color: var(--first-color);
+  color: rgb(9, 237, 9);
 }
 
 .carousel .list .item .content .buttons{
@@ -728,7 +728,7 @@ img {
     align-items: center;
     column-gap: 4rem;
   }
-
+}
 /* For medium devices */
 
 
